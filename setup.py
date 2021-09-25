@@ -28,6 +28,7 @@ setup(
     url="https://github.com/RhetTbull/sqlgrep",
     project_urls={"GitHub": "https://github.com/RhetTbull/sqlgrep"},
     download_url="https://github.com/RhetTbull/sqlgrep",
+    py_modules=["sqlgrep"],
     packages=find_packages(exclude=["tests", "utils"]),
     license="License :: OSI Approved :: MIT License",
     classifiers=[
