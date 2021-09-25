@@ -10,6 +10,8 @@ from typing import List
 import typer
 from rich import print
 
+__version__ = "0.1"
+
 
 def cli(
     ignore_case: bool = typer.Option(
@@ -31,11 +33,11 @@ def cli(
         ..., metavar="FILES ...", help="sqlite file(s) to search"
     ),
 ):
-    """ grep for sqlite databases
+    """grep for sqlite databases
 
-        searchs every field of every row in every table for PATTERN
+    searchs every field of every row in every table for PATTERN
 
-        prints out matching table, column, row number, field value
+    prints out matching table, column, row number, field value
     """
     flags = re.IGNORECASE if ignore_case else 0
 
@@ -70,5 +72,9 @@ def cli(
             raise typer.Exit(1)
 
 
-if __name__ == "__main__":
+def main():
     typer.run(cli)
+
+
+if __name__ == "__main__":
+    main()
