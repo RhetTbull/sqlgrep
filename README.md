@@ -30,6 +30,11 @@ Options:
 
   --help                          Show this message and exit.
 ```
+## Installation
+
+Use [pipx](https://github.com/pypa/pipx):
+
+- `pipx install git+https://github.com/RhetTbull/sqlgrep.git`
 
 ## Requires
 
